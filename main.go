@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	// Operator Aritmatik
 	// Penjumlahan
@@ -112,10 +114,56 @@ func main() {
 	// var i = 0
 	// for {
 	// 	fmt.Println("Berhitung", i)
-
 	// 	i++
 	// 	if i == 5 {
 	// 		break
 	// 	}
 	// }
+
+	// for i := 1; i <= 10; i++ {
+	// 	if i%2 == 1 {
+	// 		continue
+	// 	}
+	// 	if i > 8 {
+	// 		break
+	// 	}
+	// 	fmt.Println("Angka Genap", i)
+	// }
+
+	// Looping Label
+	// loopTerluar:
+	// for i := 1; i < 5; i++ {
+	// 	for k := 1; k < 5; k++ {
+	// 		fmt.Println("[", i, "]", "[", k, "]")
+	// 		if i == 2 {
+	// 			break loopTerluar // ini untuk menghentikan perulangan for berdua
+	// 		}
+	// 		// kondisi berjalan di for K
+	// 	}
+	// }
+
+	// Array Slice Map
+	// var names = [...]string{"Jean", "Pierre", "Polnaref"}
+	// var angka = [2][3]int{{1, 2, 3}, {4, 5, 6}}
+	// // names[0] = "Jean"
+	// // names[1] = "Pierre"
+	// // names[2] = "Polnaref"
+	// // fmt.Println(names[0], names[1], names[2])
+	// // fmt.Println(len(names))
+	// // fmt.Println("Nama: ", names, " terdiri dari ", len(names), " kata")
+	// fmt.Println("Angka: ", angka, " terdiri dari ", len(angka), " angka")
+
+	// Array Slice Map part 2
+	var names = [5]int{10, 20, 30, 40, 50}
+	// For Oldschool
+	// for i := 0; i < len(names); i++ {
+	// 	fmt.Println("Berhitung", names[i])
+	// }
+	// For range
+	// for index, value := range names {
+	// 	fmt.Println("index", index, "value", value)
+	// }
+	for _, value := range names {
+		fmt.Println("value", value)
+	}
 }
