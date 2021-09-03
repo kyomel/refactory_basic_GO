@@ -182,4 +182,19 @@ func main() {
 	// fmt.Println(names1, names2)
 	// // fmt.Println(len(names2), cap(names2))
 
+	// Slice Map part 2
+	// var names1 = map[string]string{
+	// 	"Januari":  "jan",
+	// 	"Februari": "feb",
+	// 	"Maret":    "mar",
+	// }
+	// var names1 = make(map[string]string)
+	// names1["Januari"] = "jan"
+	// names1["Februari"] = "feb"
+	// names1["Maret"] = "mar"
+	// for key, value := range names1 {
+	// 	fmt.Println("Key", key, "Value", value)
+	// }
+	// fmt.Println(names1)
+	// fmt.Println(len(names1))
 }
