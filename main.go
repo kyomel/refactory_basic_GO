@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 	// Operator Aritmatik
 	// Penjumlahan
@@ -154,16 +152,34 @@ func main() {
 	// fmt.Println("Angka: ", angka, " terdiri dari ", len(angka), " angka")
 
 	// Array Slice Map part 2
-	var names = [5]int{10, 20, 30, 40, 50}
-	// For Oldschool
-	// for i := 0; i < len(names); i++ {
-	// 	fmt.Println("Berhitung", names[i])
+	// var names = [5]int{10, 20, 30, 40, 50}
+	// // For Oldschool
+	// // for i := 0; i < len(names); i++ {
+	// // 	fmt.Println("Berhitung", names[i])
+	// // }
+	// // For range
+	// // for index, value := range names {
+	// // 	fmt.Println("index", index, "value", value)
+	// // }
+	// for _, value := range names {
+	// 	fmt.Println("value", value)
 	// }
-	// For range
-	// for index, value := range names {
-	// 	fmt.Println("index", index, "value", value)
-	// }
-	for _, value := range names {
-		fmt.Println("value", value)
-	}
+
+	// // Slice Map part 1
+	// var names1 = []int{1, 2, 3, 4, 5}
+	// // var names2 = names1[0:4]
+
+	// var names2 = make([]int, 2, 3)
+	// // names2[0] = "Ironman"
+	// // names2[1] = "Antman"
+
+	// names2[0] = 10
+	// names2[1] = 20
+	// // names2 = append(names2, "Black Panther")
+	// // names2 = append(names2, "Captain America")
+	// names2 = append(names2, names1...)
+
+	// fmt.Println(names1, names2)
+	// // fmt.Println(len(names2), cap(names2))
+
 }
