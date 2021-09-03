@@ -1,5 +1,33 @@
 package main
 
+// func cetakNama(nama string) string {
+// 	// fmt.Println(nama)
+// 	// fmt.Println(gender)
+// 	return nama
+// }
+
+// func cetakNama(nama string) (string, string) {
+// 	// fmt.Println(nama)
+// 	// fmt.Println(gender)
+// 	return nama, "______"
+// }
+
+// Fungsi Variadic
+// func cetakNama(nama ...string) {
+// 	for _, value := range nama {
+// 		fmt.Println(value)
+// 	}
+// }
+
+// Fungsi sebagai return value
+// func generatorBilanganGenap() func() int {
+// 	i := 0
+// 	return func() int {
+// 		i += 2
+// 		return i
+// 	}
+// }
+
 func main() {
 	// Operator Aritmatik
 	// Penjumlahan
@@ -197,4 +225,32 @@ func main() {
 	// }
 	// fmt.Println(names1)
 	// fmt.Println(len(names1))
+
+	// Fungsi part 1
+	// cetakNama("Francesca Vania")
+	// love, you := cetakNama("Francesca Vania")
+	// fmt.Println(love, you)
+	// cetakNama("Naruto", "Luffy", "Goku")
+
+	// Fungsi part 2
+	// i := 0
+	// increment := func() int {
+	// 	i += 2
+	// 	return i
+	// }
+	// fmt.Println(increment())
+	// Hasil run fungsi sbg return value
+	// bilanganGenap := generatorBilanganGenap()
+	// fmt.Println(bilanganGenap())
+	// Hasil run fungsi sbg parameter
+	// perulangan([]int{1, 3, 7, 9}, func(val int) {
+	// 	fmt.Println(val)
+	// })
 }
+
+// Fungsi sebagai parameter
+// func perulangan(angka []int, callback func(int)) {
+// 	for _, value := range angka {
+// 		callback(value)
+// 	}
+// }
