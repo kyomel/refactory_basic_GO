@@ -1,3 +1,3 @@
-module "Refactory Course/Basic Golang/Basic"
+module Golang_Basic
 
-go 1.15
+go 1.16

@@ -28,6 +28,48 @@ package main
 // 	}
 // }
 
+// Struct
+// type Person struct {
+// 	firstname string
+// 	lastname  string
+// 	age       int
+// }
+
+// func (p *Person) Biodata() string {
+// 	return fmt.Sprintf(`nama: '%s' '%s', age: %d`, p.firstname, p.lastname, p.age)
+// }
+
+// Hitung ...
+// type Hitung interface {
+// 	luas() float64
+// 	keliling() float64
+// }
+// type lingkaran struct {
+// 	diameter float64
+// }
+// type persegi struct {
+// 	sisi float64
+// }
+
+// // Hitungan lingkaran
+// func (l lingkaran) jariJari() float64 {
+// 	return l.diameter / 2
+// }
+// func (l lingkaran) luas() float64 {
+// 	return math.Phi * math.Pow(l.jariJari(), 2)
+// }
+// func (l lingkaran) keliling() float64 {
+// 	return math.Phi * l.diameter
+// }
+
+// // Hitungan persegi
+// func (p persegi) luas() float64 {
+// 	return math.Pow(p.sisi, 2)
+// }
+// func (p persegi) keliling() float64 {
+// 	return p.sisi * 4
+// }
+
 func main() {
 	// Operator Aritmatik
 	// Penjumlahan
@@ -246,6 +288,39 @@ func main() {
 	// perulangan([]int{1, 3, 7, 9}, func(val int) {
 	// 	fmt.Println(val)
 	// })
+
+	// Struct
+	// p1 := Person{
+	// 	firstname: "Francesca",
+	// 	lastname:  "Vania",
+	// 	age:       24,
+	// }
+	// fmt.Println(p1.Biodata())
+
+	// Interface
+	// var bangunDatar Hitung
+
+	// bangunDatar = persegi{10.0}
+	// fmt.Println("===> Persegi")
+	// fmt.Println("luas		:", bangunDatar.luas())
+	// fmt.Println("keliling	:", bangunDatar.keliling())
+
+	// bangunDatar = lingkaran{14.0}
+	// fmt.Println("===> Lingkaran")
+	// fmt.Println("luas		:", bangunDatar.luas())
+	// fmt.Println("keliling	:", bangunDatar.keliling())
+	// fmt.Println("jari-jari	:", bangunDatar.(lingkaran).jariJari())
+	// Interface Kosong
+	// var bangunDatar interface{}
+	// bangunDatar = "persegi"
+	// fmt.Println(reflect.TypeOf(bangunDatar))
+	// bangunDatar = 10
+	// fmt.Println(reflect.TypeOf(bangunDatar))
+	// bangunDatar = []string{"persegi"}
+	// fmt.Println(reflect.TypeOf(bangunDatar))
+	// bangunDatar = map[int]string{1: "persegi"}
+	// fmt.Println(reflect.TypeOf(bangunDatar))
+
 }
 
 // Fungsi sebagai parameter
