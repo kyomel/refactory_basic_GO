@@ -321,6 +321,23 @@ func main() {
 	// bangunDatar = map[int]string{1: "persegi"}
 	// fmt.Println(reflect.TypeOf(bangunDatar))
 
+	// Defer
+	// defer fmt.Println("halo 1")
+	// fmt.Println("halo 2")
+	// Jika defer lebih dari satu
+	// defer fmt.Println("halo 1")
+	// defer fmt.Println("halo 2")
+	// fmt.Println("halo 3")
+	// num := 2
+	// if num == 2 {
+	// 	func() {
+	// 		defer fmt.Println("halo 1")
+	// 		fmt.Println("halo 4")
+	// 	}()
+	// 	fmt.Println("halo 2")
+	// }
+	// fmt.Println("halo 3")
+
 }
 
 // Fungsi sebagai parameter
