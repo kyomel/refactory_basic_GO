@@ -70,6 +70,15 @@ package main
 // 	return p.sisi * 4
 // }
 
+// Recover function
+// func catch() {
+// 	if r := recover(); r != nil {
+// 		fmt.Println("Error occured", r)
+// 	} else {
+// 		fmt.Println("Application running perfectly")
+// 	}
+// }
+
 func main() {
 	// Operator Aritmatik
 	// Penjumlahan
@@ -338,6 +347,40 @@ func main() {
 	// }
 	// fmt.Println("halo 3")
 
+	// Error, Panic, Recover
+	// input := "is"
+	// number, err := strconv.Atoi(input)
+	// if err == nil {
+	// 	fmt.Println(number, "is number")
+	// } else {
+	// 	fmt.Println(err.Error())
+	// 	fmt.Println(input, "is not number")
+	// }
+	// input := "is"
+	// number, err := strconv.Atoi(input)
+	// if err == nil {
+	// 	fmt.Println(number, "is number")
+	// } else {
+	// 	panic(err.Error())
+	// 	fmt.Println(input, "is not number")
+	// } //Panic tidak harus digunakan saat error
+	// input := "is"
+	// number, err := strconv.Atoi(input)
+	// if err == nil {
+	// 	fmt.Println(number, "is number")
+	// } else {
+	// 	fmt.Println(err.Error())
+	// 	fmt.Println(input, "is not number")
+	// }
+	// defer catch()
+	// input := "ls"
+	// number, err := strconv.Atoi(input)
+	// if err == nil {
+	// 	fmt.Println(number, "is number")
+	// } else {
+	// 	panic(err.Error())
+	// 	fmt.Println(input, "is not number")
+	// }
 }
 
 // Fungsi sebagai parameter
