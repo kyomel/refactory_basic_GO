@@ -28,7 +28,7 @@ package main
 // 	}
 // }
 
-// Struct
+// Person ...
 // type Person struct {
 // 	firstname string
 // 	lastname  string
@@ -37,6 +37,14 @@ package main
 
 // func (p *Person) Biodata() string {
 // 	return fmt.Sprintf(`nama: '%s' '%s', age: %d`, p.firstname, p.lastname, p.age)
+// }
+
+// func (p *Person) fullName() string {
+// 	return fmt.Sprintf(`%s %s`, p.firstname, p.lastname)
+// }
+
+// func (p *Person) updateFirstName(str string) {
+// 	p.firstname = str
 // }
 
 // Hitung ...
@@ -381,6 +389,22 @@ func main() {
 	// 	panic(err.Error())
 	// 	fmt.Println(input, "is not number")
 	// }
+
+	// Pointer
+	// p := Person{
+	// 	firstname: "Vania",
+	// 	lastname:  "Francesca",
+	// 	age:       23,
+	// }
+	// fmt.Println(p.fullName())
+	// p.updateFirstName("Cici")
+	// fmt.Println(p.fullName())
+	// var A int = 10
+	// var B *int = &A
+	// fmt.Println("value:", A)
+	// fmt.Println("address:", &A)
+	// fmt.Println("value:", *B)
+	// fmt.Println("address:", B)
 }
 
 // Fungsi sebagai parameter
